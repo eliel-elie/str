@@ -436,6 +436,7 @@ This library offers more object-oriented and more fluent string manipulation.
 <br>
 <br>
 <br>
+
 ### License
 The MIT License (MIT). Please see <a href="LICENSE">License File<a/> for more information.
 
