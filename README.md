@@ -1,4 +1,4 @@
-##Fluent String
+## Fluent String
 
 This library offers more object-oriented and more fluent string manipulation.
 
@@ -8,7 +8,7 @@ This library offers more object-oriented and more fluent string manipulation.
 ![BUILD](https://img.shields.io/badge/build-pass-success)
 ![LICENSE](https://img.shields.io/badge/license-MIT-success)
 
-###Installation
+### Installation
 
 <p>Available via Composer</p>
 
@@ -41,7 +41,7 @@ This library offers more object-oriented and more fluent string manipulation.
 
 ```
 
-###License
+### License
 The MIT License (MIT). Please see <a href="LICENSE">License File<a/> for more information.
 
 
