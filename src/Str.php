@@ -186,7 +186,7 @@ class Str
      * @param  string[]  $needles
      * @return bool
      */
-    public static function containsAll($haystack, array $needles)
+    public static function containsAll($haystack, $needles)
     {
         foreach ($needles as $needle) {
             if (! static::contains($haystack, $needle)) {
