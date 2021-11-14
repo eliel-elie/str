@@ -2,6 +2,7 @@
     "name": "leafy-tech/str",
     "description": "This library offers more object-oriented and more fluent string manipulation.",
     "type": "library",
+    "version": "1.0.2",
     "license": "MIT",
     "autoload": {
         "psr-4": {
