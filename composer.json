@@ -1,0 +1,19 @@
+{
+    "name": "leafy-tech/str",
+    "description": "This library offers more object-oriented and more fluent string manipulation.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LeafyTech\\Support\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eliel Ferreira",
+            "email": "eliel_elie@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
