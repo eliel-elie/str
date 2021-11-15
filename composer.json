@@ -3,7 +3,7 @@
     "description": "This library offers more object-oriented and more fluent string manipulation.",
     "keywords": ["string","fluent","str"],
     "type": "library",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "autoload": {
         "psr-4": {
