@@ -455,6 +455,27 @@ class Str
     }
 
     /**
+     * Replace a given value in the string sequentially with an array.
+     *
+     * @param  string  $search
+     * @param  array<int|string, string>  $replace
+     * @param  string  $subject
+     * @return string
+     */
+    public static function replaceArray($search, $replace, $subject)
+    {
+        $segments = explode($search, $subject);
+
+        $result = array_shift($segments);
+
+        foreach ($segments as $segment) {
+            $result .= (array_shift($replace) ?: $search).$segment;
+        }
+
+        return $result;
+    }
+    
+    /**
      * Replace the first occurrence of a given value in the string.
      *
      * @param  string  $search
