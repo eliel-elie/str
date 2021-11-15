@@ -4,7 +4,7 @@ This library offers more object-oriented and more fluent string manipulation.
 
 ![Maintainer](https://img.shields.io/badge/maintainer-Eliel%20Ferreira-informational)
 ![PHP](https://img.shields.io/badge/PHP->=5.6-blueviolet)
-![VERSION](https://img.shields.io/badge/stable-v1.0.2-blue)
+![VERSION](https://img.shields.io/badge/stable-v1.0.3-blue)
 ![BUILD](https://img.shields.io/badge/build-pass-success)
 ![LICENSE](https://img.shields.io/badge/license-MIT-success)
 
@@ -271,6 +271,18 @@ This library offers more object-oriented and more fluent string manipulation.
     $removed = Str::replace('last', 'first', $string);
 
     // My first name
+```
+**Str::replaceArray()**
+```php
+   // The method replaces a given value in the string sequentially using an array:
+    
+    use LeafyTech\Support\Str;
+    
+    $string = 'The event will take place between ? and ?';
+
+    $replaced = Str::replaceArray('?', ['8:30', '9:00'], $string);
+
+    // The event will take place between 8:30 and 9:00
 ```
 **Str::replaceFirst()**
 ```php
