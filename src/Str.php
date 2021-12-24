@@ -71,6 +71,22 @@ class Str
     }
 
     /**
+     * Transliterate a UTF-8.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public static function transliterate($value)
+    {
+        $value = filter_var($value, FILTER_SANITIZE_STRIPPED);
+
+        $formats = 'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜüÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿRr"!@#$%&*()_-+={[}]/?;:.,\\\'<>°ºª';
+        $replace = 'AAAAAAACEEEEIIIIDNOOOOOOUUUUuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr                                 ';
+
+        return trim(strtr(utf8_decode($value), utf8_decode($formats), $replace));
+    }
+
+    /**
      * Get the portion of a string before the first occurrence of a given value.
      *
      * @param  string  $subject
@@ -537,6 +553,17 @@ class Str
     }
 
     /**
+     * Reverse the given string.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public static function reverse($value)
+    {
+        return implode(array_reverse(str_split($value)));
+    }
+
+    /**
      * Begin a string with a single instance of a given value.
      *
      * @param  string  $value
@@ -656,6 +683,24 @@ class Str
         } else {
             return substr_count($haystack, $needle, $offset);
         }
+    }
+
+    /**
+     * Replace text within a portion of a string.
+     *
+     * @param  string|array  $string
+     * @param  string|array  $replace
+     * @param  array|int  $offset
+     * @param  array|int|null  $length
+     * @return string|array
+     */
+    public static function substrReplace($string, $replace, $offset = 0, $length = null)
+    {
+        if ($length === null) {
+            $length = strlen($string);
+        }
+
+        return substr_replace($string, $replace, $offset, $length);
     }
 
     /**
