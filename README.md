@@ -4,7 +4,7 @@ This library offers more object-oriented and more fluent string manipulation.
 
 ![Maintainer](https://img.shields.io/badge/maintainer-Eliel%20Ferreira-informational)
 ![PHP](https://img.shields.io/badge/PHP->=5.6-blueviolet)
-![VERSION](https://img.shields.io/badge/stable-v1.0.3-blue)
+![VERSION](https://img.shields.io/badge/stable-v1.0.5-blue)
 ![BUILD](https://img.shields.io/badge/build-pass-success)
 ![LICENSE](https://img.shields.io/badge/license-MIT-success)
 
